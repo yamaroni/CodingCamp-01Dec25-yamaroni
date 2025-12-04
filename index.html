@@ -4,22 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Yama</title>
+    <title>Portfolio Yama Roni</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header></header>
+    <header class="main-header p-[8px]">
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Bar -->
+        <nav class="flex">
+            <a class="border p-[4px]" href="#home-page">Home</a>
+            <a class="border p-[4px]" href="#our-profile-page">Our Profile</a>
+            <a class="border p-[4px]" href="#portfolio-page">Portfolio</a>
+            <a class="border p-[4px]" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
 
     <!-- Main -->
-    <main></main>
+    <main>
+
+        <!-- Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr>
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Yama Company</h2>
+            <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+        </section>
+
+        <hr>
+
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        </section>
+
+        <hr>
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+            </form>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <p class="text-center p-4">© 2025 Yama Roni. All rights reserved.</p>
+    </footer>
 
     <!-- JS External -->
     <script src="js/script.js"></script>
